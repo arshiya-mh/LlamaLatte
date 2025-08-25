@@ -1,0 +1,31 @@
+.hback{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.hhvr1 {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  color: #000;
+  font-size: 17px;
+  text-decoration: none;
+  transition: .8s;
+}
+.hhvr1:hover{
+  color: #f3cf7a;
+}
+
+.hhvr1::after {
+  content: '';
+  position: absolute;
+  left: 100%; 
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f3cf7a;
+  transition: all 0.3s ease;
+}
+
+.hhvr1:hover::after {
+  left: 0;
+  width: 100%; 
+}
