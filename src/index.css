@@ -28,3 +28,19 @@
     opacity: 0;
   }
 }
+:root {
+  --bg: #ffffff;      /* پس‌زمینه عمومی در لایت */
+  --text: #111111;    /* متن عمومی در لایت */
+  --card: #f5f5f5;    /* کارت/باکس روشن */
+  --border: #e5e7eb;  /* حاشیه روشن */
+}
+
+:root[data-theme="dark"] {
+  --bg: #0b0b0b;      /* پس‌زمینه عمومی در دارک */
+  --text: #f5f5f5;    /* متن عمومی در دارک */
+  --card: #141414;    /* کارت/باکس تیره */
+  --border: #262626;  /* حاشیه تیره */
+}
+
+/* ترنزیشن لطیف */
+* { transition: background-color .2s ease, color .2s ease, border-color .2s ease; }
